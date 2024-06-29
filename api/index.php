@@ -1,3 +1,4 @@
-<?php declare(strict_types = 1);
+<?php
 
-phpinfo(INFO_ALL & ~INFO_ENVIRONMENT & ~INFO_CONFIGURATION & ~INFO_VARIABLES);
+header('content-type: application/json');
+echo json_encode(['time' => time(), 'date' => date('d.m.Y'), 'tech' => 'Vercel']);
